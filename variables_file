@@ -1,0 +1,3 @@
+export FREECAD_BUILD_COMMAND=/my/build_script.sh
+export FREECAD_BUILD_LOCATION=/my/code/build
+export FREECAD_SOURCE_LOCATION=/my/code/source

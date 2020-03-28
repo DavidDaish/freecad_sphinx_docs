@@ -1,0 +1,41 @@
+- Rationalise the documentation generation process. Figure out why it's so complicated.
+- Write documentation recommendations and guide.
+- Get the headers added correctly.
+- Get markdown working correctly.
+- Add unit tests to allow for renaming the Arch classes.
+- Rename and alias Arch classes to remove underscore.
+
+Alternative documentation 
+
+Ideal:
+
+- Auto generates on changes.
+- Easy to see where it's been generated and to see changes.
+- Easy to install on all systems.
+- Elegant handling of both c++ and python.
+- Does not make docstrings worse.
+- Low barrier to entry to make it easier for developers to document changes.
+
+Design:
+
+- Use sphinx.
+- Use docstrings in google style. 
+  - http://www.sphinx-doc.org/en/stable/usage/extensions/example_google.html#example-google
+  - https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings
+- Use autodoc with napoleon to extract these docstrings.
+- Have sphinx documentation as higher level documentation. Things that don't make sense to include in a docstring.
+
+- Use several entr sessions to autogenerate on changes, with different actions for c++ changes, python changes, and
+  sphinx changes. These entr changes should assume that only comments and documentation will change.
+
+Todo:
+
+- Done! Setup sphinx
+- Setup autodoc, and get it working with FreeCAD
+- Setup a simple autobuild on change process.
+- Setup napoleon and get it working with documents.
+- Setup breath/doxygen and get it working with documents.
+- Setup a autobuild process for all the existing processes.
+- Document the installation process for a prospective documentor.
+- Work out a basic, readable document structure.
+- Make a suitable theme.
