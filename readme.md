@@ -8,9 +8,9 @@
 
 ## Building the documentation automatically on change
 
-To autogenerate sphinx documenetation when you make a source code change, edit
-the `varaibles_file` and set the variables to their appropriate values,
-suitable for your personal development enviroment.
+To auto-generate sphinx documentation when you make a source code change, edit
+the `variables_file` and set the variables to their appropriate values,
+suitable for your personal development environment.
 
 They are, respectively:
 
@@ -18,7 +18,7 @@ They are, respectively:
 - The absolute path to the root directory of the build location of FreeCAD;
 - The absolute path to the root directory of the source code location of FreeCAD.
 
-Now run the following three sets of commands in three seperate terminals. Feel
+Now run the following three sets of commands in three separate terminals. Feel
 free to exclude any if you don't intend to edit the relevant file types.
 
 To regenerate when sphinx code is changed:
@@ -47,7 +47,7 @@ You can now find the built html documentation in `build/index.html`.
 ## Building the documentation manually
 
 To generate documentation manually, first, build FreeCAD. Then, export the
-following enviroment varaible, which should contain the absolute path to the
+following environment variable, which should contain the absolute path to the
 root directory of the build location of FreeCAD.
 
 ```

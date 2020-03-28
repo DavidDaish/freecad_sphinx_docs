@@ -31,11 +31,11 @@ Design:
 Todo:
 
 - Done! Setup sphinx
-- Setup autodoc, and get it working with FreeCAD
-- Setup a simple autobuild on change process.
-- Setup napoleon and get it working with documents.
+- Done! Setup autodoc, and get it working with FreeCAD
+- Done! Setup a simple autobuild on change process.
 - Setup breath/doxygen and get it working with documents.
 - Setup a autobuild process for all the existing processes.
+- Setup napoleon and get it working with documents.
 - Document the installation process for a prospective documentor.
 - Work out a basic, readable document structure.
 - Make a suitable theme.
