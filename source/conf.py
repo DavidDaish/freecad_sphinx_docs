@@ -13,8 +13,6 @@ try:
 except:
     raise Exception("Please enter the base directory of FreeCAD's build location.")
 
-print("Specified Freecad build path: {}".format(freecad_build_path))
-
 lib_from_base = "lib/"
 freecad_lib_path = os.path.join(freecad_build_path, lib_from_base)
 sys.path.append(freecad_lib_path)
@@ -32,30 +30,19 @@ author = 'FreeCAD community'
 
 # -- General configuration ---------------------------------------------------
 
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
 extensions = [
-    "sphinx.ext.autodoc"
+    "sphinx.ext.autodoc",
+    "breathe"
 ]
 
-# Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+# -- Breathe configuration ---------------------------------------------------
 
+breathe_projects = {"FreeCAD": "../doxygen_and_breathe/dox_output/xml"}
+breathe_default_project = "FreeCAD"
 
 # -- Options for HTML output -------------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
 html_theme = 'alabaster'
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
