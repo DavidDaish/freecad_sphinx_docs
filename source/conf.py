@@ -39,8 +39,24 @@ templates_path = ['_templates']
 
 # -- Breathe configuration ---------------------------------------------------
 
-breathe_projects = {"FreeCAD": "../doxygen_and_breathe/dox_output/xml"}
-breathe_default_project = "FreeCAD"
+# For each section of FreeCAD that contains cpp code, a seperate breathe
+# project must be made to limit the amount of code doxygen and breath needs to
+# scrape each time the documentation gets generated.
+
+breathe_path = "../doxygen_and_breathe/{}/dox_output/xml"
+
+breathe_projects = {
+    "App": breathe_path.format("App"),
+    "Base": breathe_path.format("Base"),
+    "Gui": breathe_path.format("Gui"),
+    "Main": breathe_path.format("Main"),
+    "Assembly": breathe_path.format("Assembly"),
+    "Drawing": breathe_path.format("Drawing"),
+    "Draft": breathe_path.format("Draft"),
+    "Fem": breathe_path.format("Fem"),
+    "Part": breathe_path.format("Part"),
+    "Sketcher": breathe_path.format("Sketcher")
+    }
 
 # -- Options for HTML output -------------------------------------------------
 

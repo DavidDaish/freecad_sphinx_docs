@@ -4,7 +4,9 @@
 
 1) Successfully build FreeCAD
 2) Install sphinx: www.sphinx-doc.org/en/stable/usage/installation.html
-3) Install entr, if you'd like to build the documentation automatically on changes: http://eradman.com/entrproject/
+3) Install breathe: https://github.com/michaeljones/breathe
+4) Install doxygen: http://www.doxygen.nl/manual/install.html
+5) Install entr, if you'd like to build the documentation automatically on changes: http://eradman.com/entrproject/
 
 ## Building the documentation automatically on change
 
@@ -23,23 +25,24 @@ free to exclude any if you don't intend to edit the relevant file types.
 
 To regenerate when sphinx code is changed:
 
-```
+```bash
 source variables_file
 find ./source | entr ./build_scripts/change_sphinx.sh
 ```
 
 To regenerate when python code is changed:
 
-```
+```bash
 source variables_file
 find $FREECAD_SOURCE_LOCATION -iname *.py | entr ./build_scripts/change_python.sh
 ```
 
 To regenerate when c++ code is changed:
 
-```
+```bash
 source variables_file
-{ find $FREECAD_SOURCE_LOCATION -iname *.cpp ; find $FREECAD_SOURCE_LOCATION -iname *.h ;} | entr ./build_scripts/change_cpp.sh
+export section=Draft
+find $FREECAD_SOURCE_LOCATION -name *$section*.cpp -o -name *$section*.h -o -name *$section*.dox | entr ./build_scripts/change_cpp.sh $section
 ```
 
 You can now find the built html documentation in `build/index.html`.
@@ -47,11 +50,22 @@ You can now find the built html documentation in `build/index.html`.
 ## Building the documentation manually
 
 To generate documentation manually, first, build FreeCAD. Then, export the
-following environment variable, which should contain the absolute path to the
-root directory of the build location of FreeCAD.
+following environment variables.
+
+They are, respectively:
+
+- The absolute path to the root directory of the build location of FreeCAD;
+- The absolute path to the root directory of the source code location of FreeCAD.
 
 ```
 export FREECAD_BUILD_LOCATION=/home/me/freecad_build
+export FREECAD_SOURCE_LOCATION=/home/me/freecad_source
+```
+
+Run doxygen over the source code
+
+```
+doxygen doxygen_and_breathe/Doxyfile
 ```
 
 Now run sphinx-build.

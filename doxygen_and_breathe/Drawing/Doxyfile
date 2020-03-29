@@ -1,9 +1,9 @@
-PROJECT_NAME = "FreeCAD"
+PROJECT_NAME = "Drawing"
+INPUT = $(FREECAD_SOURCE_LOCATION)/src/Mod/Drawing
+OUTPUT_DIRECTORY = $(PWD)/doxygen_and_breathe/Drawing/dox_output
 GENERATE_XML = YES
 GENERATE_HTML = NO
 GENERATE_LATEX = NO
-INPUT = $(FREECAD_SOURCE_LOCATION)
-OUTPUT_DIRECTORY = $(PWD)/doxygen_and_breathe/dox_output
 CREATE_SUBDIRS = YES
 FILE_PATTERNS = *.h \
                 *.hpp \
@@ -19,7 +19,8 @@ EXCLUDE_PATTERNS = *.moc.* \
                    */swigpyrun*.* \
                    */lex.*.c \
                    */.svn/* \
-                   */CMakeFiles/*
+                   */CMakeFiles/* \
+                   */3rdParty/*
 EXCLUDE_SYMBOLS = __init__ \
                   None \
                   __setstate__ \
@@ -32,7 +33,7 @@ EXCLUDE_SYMBOLS = __init__ \
                   ap203* \
                   Py \
                   SIM 
-LOOKUP_CACHE_SIZE = 3
 RECURSIVE = YES
 HAVE_DOT = FALSE
 CLASS_DIAGRAMS = FALSE
+ALLOW_UNICODE_NAMES = NO

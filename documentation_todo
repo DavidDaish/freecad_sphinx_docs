@@ -27,15 +27,26 @@ Design:
 
 - Use several entr sessions to autogenerate on changes, with different actions for c++ changes, python changes, and
   sphinx changes. These entr changes should assume that only comments and documentation will change.
+- Each major section of cpp based FreeCAD will have it's own breathe project and doxygen session. This will speed up
+  build times by only processing the parts that have changed.
 
 Todo:
 
 - Done! Setup sphinx
 - Done! Setup autodoc, and get it working with FreeCAD
 - Done! Setup a simple autobuild on change process.
-- Setup breath/doxygen and get it working with documents.
+- Done! Setup breath/doxygen and get it working with documents.
+- Split the breath and doxygen build processes into many different breathe
+  projects to speed up build times.
 - Setup a autobuild process for all the existing processes.
 - Setup napoleon and get it working with documents.
 - Document the installation process for a prospective documentor.
 - Work out a basic, readable document structure.
 - Make a suitable theme.
+
+Negatives:
+
+- Have to build FreeCAD each time you make a change to python, because sphinx
+  is pulling the python docstrings and module structure from the build FreeCAD.
+  This is due to the cython not being readable as python until it is built.
+- Probably only works on linux and mac.

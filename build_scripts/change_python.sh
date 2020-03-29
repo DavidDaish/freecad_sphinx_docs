@@ -4,4 +4,4 @@
 $FREECAD_BUILD_COMMAND
 
 # Build sphinx
-sphinx-build source build
+sphinx-build -j $(nproc --ignore=2) source build
