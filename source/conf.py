@@ -1,9 +1,5 @@
-# -- Path setup --------------------------------------------------------------
+# -- FreeCAD setup -----------------------------------------------------------
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 import os
 import sys
 
@@ -27,12 +23,12 @@ project = 'FreeCAD'
 copyright = '2020, FreeCAD community'
 author = 'FreeCAD community'
 
-
 # -- General configuration ---------------------------------------------------
 
 extensions = [
     "sphinx.ext.autodoc",
-    "breathe"
+    "breathe",
+    "sphinx.ext.napoleon"
 ]
 
 templates_path = ['_templates']

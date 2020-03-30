@@ -36,11 +36,11 @@ Todo:
 - Done! Setup autodoc, and get it working with FreeCAD
 - Done! Setup a simple autobuild on change process.
 - Done! Setup breath/doxygen and get it working with documents.
-- Split the breath and doxygen build processes into many different breathe
+- Done! Split the breath and doxygen build processes into many different breathe
   projects to speed up build times.
-- Setup a autobuild process for all the existing processes.
-- Setup napoleon and get it working with documents.
-- Document the installation process for a prospective documentor.
+- Done! Setup a autobuild process for all the existing processes.
+- Done! Setup napoleon and get it working with documents.
+- Done! Document the installation process for a prospective documentor.
 - Work out a basic, readable document structure.
 - Make a suitable theme.
 
@@ -50,3 +50,8 @@ Negatives:
   is pulling the python docstrings and module structure from the build FreeCAD.
   This is due to the cython not being readable as python until it is built.
 - Probably only works on linux and mac.
+- Pretty complex for a documentation project.
+
+Useful things to document in addition to Arch
+- Command::doCommand()
+- FreeCADGui.Snapper / Draft*....Snapper

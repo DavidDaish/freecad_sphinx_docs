@@ -43,7 +43,7 @@ find ./source | entr ./build_scripts/change_sphinx.sh
 
 ```bash
 source variables_file
-find $FREECAD_SOURCE_LOCATION -iname *.py | entr ./build_scripts/change_python.sh
+find $FREECAD_SOURCE_LOCATION -name *.py | entr ./build_scripts/change_python.sh
 ```
 
 ### To regenerate when c++ code is changed

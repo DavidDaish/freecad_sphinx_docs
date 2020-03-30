@@ -4,8 +4,7 @@ FreeCAD API documentation
 .. toctree::
    :maxdepth: 2
 
-   test
-
+   Arch/index
 
 Indices and tables
 ==================
