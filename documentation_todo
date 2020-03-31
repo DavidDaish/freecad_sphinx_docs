@@ -23,12 +23,15 @@ Design:
   - http://www.sphinx-doc.org/en/stable/usage/extensions/example_google.html#example-google
   - https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings
 - Use autodoc with napoleon to extract these docstrings.
-- Have sphinx documentation as higher level documentation. Things that don't make sense to include in a docstring.
+- Have sphinx documentation as higher level documentation. Things that don't
+  make sense to include in a docstring.
 
-- Use several entr sessions to autogenerate on changes, with different actions for c++ changes, python changes, and
-  sphinx changes. These entr changes should assume that only comments and documentation will change.
-- Each major section of cpp based FreeCAD will have it's own breathe project and doxygen session. This will speed up
-  build times by only processing the parts that have changed.
+- Use several entr sessions to autogenerate on changes, with different actions
+  for c++ changes, python changes, and sphinx changes. These entr changes
+  should assume that only comments and documentation will change.
+- Each major section of cpp based FreeCAD will have it's own breathe project
+  and doxygen session. This will speed up build times by only processing the
+  parts that have changed.
 
 Todo:
 
@@ -43,6 +46,7 @@ Todo:
 - Done! Document the installation process for a prospective documentor.
 - Work out a basic, readable document structure.
 - Make a suitable theme.
+- Look over ongoing questions page.
 
 Negatives:
 
@@ -55,3 +59,23 @@ Negatives:
 Useful things to document in addition to Arch
 - Command::doCommand()
 - FreeCADGui.Snapper / Draft*....Snapper
+- The property system.
+- Part::Feature, Part::FeaturePython, Part::TopoShape, App::DocumentObject 
+- InList and OutList system. How does that work?
+
+Ongoing questions:
+- How should properties be documented? They are clearly important. As important
+  as attributes for classes.
+- Should there be a template or guideline for how to document commonly
+  repeating code, such as classes for objects?
+- How the heck is someone supposed to know all the methods and properties that
+  matter for an object/command definition? How would one know that objects
+  should have an onChanged method for example?
+- How should I indicate the source path to these various functions and whatnot?
+- For everything that's broken up into different parts, what if I just repeat
+  them in various parts, so no-one gets confused? Keep _CommandWall in both the
+  ArchWall pages, and in the commands page!
+- You're making a few assumptions about whether the Arch objects need to be
+  <Part::FeaturePython>s.
+- I should come back to each class that inherits things, and add as members, all
+  the methods they use from parent classes.
