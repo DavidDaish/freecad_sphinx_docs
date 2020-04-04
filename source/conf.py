@@ -57,4 +57,4 @@ breathe_projects = {
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = 'alabaster'
-html_static_path = ['_static']
+html_static_path = ['static']

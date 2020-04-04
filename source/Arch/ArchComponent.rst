@@ -4,6 +4,7 @@ Arch Component
 .. autoclass:: ArchComponent.Component
     :show-inheritance:
 
+    .. automethod:: __init__
     .. automethod:: setProperties
     .. automethod:: onChanged
     .. automethod:: getMovableChildren
@@ -12,5 +13,18 @@ Arch Component
     .. automethod:: getSiblings
     .. automethod:: getExtrusionData
     .. automethod:: rebase
+    .. automethod:: hideSubobjects
+    .. automethod:: processSubShapes
+    .. automethod:: spread
+    .. automethod:: isIdentity
+    .. automethod:: applyShape
+    .. automethod:: computeAreas
+    .. automethod:: isStandardCase
     
-.. autofunction:: Arch.getExtrusionData
+.. autoclass:: ArchComponent.ViewProviderComponent
+
+    .. automethod:: __init__
+    .. automethod:: setProperties
+    .. automethod:: updateData
+    .. automethod:: getIcon
+    .. automethod:: onChanged
