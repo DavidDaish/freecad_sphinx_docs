@@ -28,3 +28,20 @@ Arch Component
     .. automethod:: updateData
     .. automethod:: getIcon
     .. automethod:: onChanged
+    .. automethod:: attach
+    .. automethod:: getDisplayModes
+    .. automethod:: setDisplayMode
+    .. automethod:: claimChildren
+    .. automethod:: setEdit
+    .. automethod:: unsetEdit
+    .. automethod:: setupContextMenu
+    .. automethod:: areDifferentColors
+    .. automethod:: colorize
+    .. automethod:: getHosts
+
+.. autoclass:: ArchComponent.ArchSelectionObserver
+
+    .. automethod:: __init__
+    .. automethod:: addSelection
+
+.. autoclass:: ArchComponent.SelectionTaskPanel
