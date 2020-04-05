@@ -1,6 +1,12 @@
 Arch Component
 ==============
 
+.. automodule:: ArchComponent
+
+.. autofunction:: ArchComponent.addToComponent
+
+.. autofunction:: ArchComponent.removeFromComponent
+
 .. autoclass:: ArchComponent.Component
     :show-inheritance:
 
@@ -45,3 +51,36 @@ Arch Component
     .. automethod:: addSelection
 
 .. autoclass:: ArchComponent.SelectionTaskPanel
+
+    .. automethod:: __init__
+    .. automethod:: getStandardButtons
+    .. automethod:: reject
+
+.. autoclass:: ArchComponent.ComponentTaskPanel
+
+    .. automethod:: __init__
+    .. automethod:: isAllowedAlterSelection
+    .. automethod:: isAllowedAlterView
+    .. automethod:: getStandardButtons
+    .. automethod:: check
+    .. automethod:: getIcon
+    .. automethod:: update
+    .. automethod:: addElement
+    .. automethod:: removeElement
+    .. automethod:: accept
+    .. automethod:: editObject
+    .. automethod:: retranslateUi
+    .. automethod:: editIfcProperties
+    .. automethod:: acceptIfcProperties
+    .. automethod:: addIfcProperty
+    .. automethod:: addIfcPset
+    .. automethod:: removeIfcProperty
+    .. automethod:: editClass
+
+.. autoclass:: ArchComponent.IfcEditorDelegate
+    :show-inheritance:
+
+    .. automethod:: __init__
+    .. automethod:: createEditor
+    .. automethod:: setEditorData
+    .. automethod:: setModelData

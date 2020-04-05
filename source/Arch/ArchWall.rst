@@ -26,6 +26,3 @@ Arch Wall
         many properties, for example, no placement nor topological shape. This
         object is for general purpose use; depending on the properties that are
         assigned to it, it can be used to manage different types of data. 
-
-..
-    TODO Come back to ArchWall._Wall

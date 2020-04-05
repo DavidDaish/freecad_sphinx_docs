@@ -80,3 +80,6 @@ Ongoing questions:
   about it: https://wiki.freecadweb.org/Creating_a_FeaturePython_Box,_Part_II/en
 - I should come back to each class that inherits things, and add as members, all
   the methods they use from parent classes.
+- I need to better understand and document Gui/TaskView/TaskDialogPython.cpp
+  What are the actual consequences of isAllowedAlterSelection and the like?
+  What other cpp files define the required and useful methods for python classes?

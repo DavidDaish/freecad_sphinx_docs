@@ -14,7 +14,7 @@ freecad_lib_path = os.path.join(freecad_build_path, lib_from_base)
 sys.path.append(freecad_lib_path)
 
 import FreeCAD, FreeCADGui
-# FreeCADGui.showMainWindow() # this is needed for complete import of GUI modules
+FreeCADGui.showMainWindow() # this is needed for complete import of GUI modules
 doc = FreeCAD.newDocument("doc")
 
 # -- Project information -----------------------------------------------------
