@@ -83,3 +83,10 @@ Ongoing questions:
 - I need to better understand and document Gui/TaskView/TaskDialogPython.cpp
   What are the actual consequences of isAllowedAlterSelection and the like?
   What other cpp files define the required and useful methods for python classes?
+- Is there a way to see what is subclassing the python classes in the docs?
+  Something similar to the way doxygen does it?
+- Is there a way to get the gui screen that flashes up each time the docs are
+  rebuild to be less intrusive? Perhaps make the screen smaller?
+- I should record the purposes and behaviours of the various property types.
+- I should add references to the obj and vobj in the parameters of the class
+  methods.

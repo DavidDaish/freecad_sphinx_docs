@@ -5,5 +5,6 @@ Arch
 
     ArchTools
     ArchComponent
+    ArchIFC
     ArchWall
     
