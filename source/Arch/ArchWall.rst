@@ -29,7 +29,7 @@ Arch Wall
     .. automethod:: attach
     .. automethod:: updateData
     .. automethod:: getDisplayModes
-    .. automethod:: setDisplaymode
+    .. automethod:: setDisplayMode
 
 .. 
     The ArchWall._CommandWall can't ever enter it's interactive mode, which is
