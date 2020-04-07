@@ -5,6 +5,7 @@ Arch
 
     ArchWall
     ArchFloor
+    ArchSite
     ArchProject
     ArchTools
     ArchComponent
