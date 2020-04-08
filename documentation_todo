@@ -1,10 +1,3 @@
-- Rationalise the documentation generation process. Figure out why it's so complicated.
-- Write documentation recommendations and guide.
-- Get the headers added correctly.
-- Get markdown working correctly.
-- Add unit tests to allow for renaming the Arch classes.
-- Rename and alias Arch classes to remove underscore.
-
 Alternative documentation 
 
 Ideal:
@@ -44,8 +37,8 @@ Todo:
 - Done! Setup a autobuild process for all the existing processes.
 - Done! Setup napoleon and get it working with documents.
 - Done! Document the installation process for a prospective documentor.
-- Work out a basic, readable document structure.
 - Make a suitable theme.
+- Work out a basic, readable document structure.
 - Look over ongoing questions page.
 
 Negatives:
@@ -90,3 +83,14 @@ Ongoing questions:
 - I should record the purposes and behaviours of the various property types.
 - I should add references to the obj and vobj in the parameters of the class
   methods.
+- Inconsistent capitalisation and referencing for all the various objects and
+  things and groups and children and whatnot.
+- Look at all of the repeated methods and functions, and figure out a
+  consistent writing style for them. They vary too much.
+
+Prettification project:
+
+- Header like FreeCAD forum.
+- Done! Some way to link to sourcecode.
+- What is subclassing these objects?
+- Spacing in between classes.

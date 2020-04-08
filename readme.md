@@ -5,6 +5,7 @@
 1) Successfully build FreeCAD
 2) Install sphinx: www.sphinx-doc.org/en/stable/usage/installation.html
 3) Install breathe: https://github.com/michaeljones/breathe
+4) Install gitpython: https://gitpython.readthedocs.io/en/stable/intro.html
 4) Install doxygen: http://www.doxygen.nl/manual/install.html
 5) Install entr, if you'd like to build the documentation automatically on changes: http://eradman.com/entrproject/
 

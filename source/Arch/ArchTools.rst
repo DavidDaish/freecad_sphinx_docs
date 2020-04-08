@@ -2,14 +2,11 @@ Arch workbench tools
 ====================
 
 .. autoclass:: ArchWall._CommandWall
-
-    .. automethod:: Activated
-    .. automethod:: getPoint
-    .. automethod:: update
-    .. automethod:: taskbox
-    .. automethod:: addDefault
-
+    :noindex:
+    :members:
 
 .. autoclass:: ArchWall._CommandMergeWalls
+    :noindex:
+    :members:
 
-    .. automethod:: Activated
+
