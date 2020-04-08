@@ -7,6 +7,7 @@ Arch Component
 
 .. autofunction:: ArchComponent.removeFromComponent
 
+.. inheritance-diagram:: ArchComponent.Component
 .. autoclass:: ArchComponent.Component
     :show-inheritance:
 

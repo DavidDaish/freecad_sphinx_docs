@@ -90,7 +90,8 @@ Ongoing questions:
 
 Prettification project:
 
+- Sidebar that follows you.
+    - Should be segmented by the module you're looking at.
 - Header like FreeCAD forum.
 - Done! Some way to link to sourcecode.
-- What is subclassing these objects?
 - Spacing in between classes.

@@ -1,5 +1,7 @@
 # Sphinx FreeCAD documentation
 
+Theme adapted from the guzzle_sphinx_theme theme: https://github.com/guzzle/guzzle_sphinx_theme
+
 ## Setup
 
 1) Successfully build FreeCAD

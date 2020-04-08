@@ -4,8 +4,33 @@ import pathlib
 import git
 import re
 
-# -- FreeCAD setup -----------------------------------------------------------
+# -- Project information -----------------------------------------------------
 
+project = 'FreeCAD'
+copyright = '2020, FreeCAD community'
+author = 'FreeCAD community'
+
+# -- General configuration ---------------------------------------------------
+
+extensions = [
+    "sphinx.ext.autodoc",
+    "breathe",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.linkcode",
+    "sphinx.ext.inheritance_diagram"
+]
+
+templates_path = ['_templates']
+html_theme_path = ["."]
+html_theme = "theme"
+html_static_path = ['static']
+
+# Autodoc config
+autodoc_default_options = {
+    "member-order": "bysource"
+    }
+
+# -- FreeCAD setup -----------------------------------------------------------
 
 # Adding FreeCAD and FreeCADGui so it can be accessed by autodoc
 try:
@@ -177,29 +202,6 @@ def linkcode_resolve(domain, info):
     return None
 
 
-# -- Project information -----------------------------------------------------
-
-project = 'FreeCAD'
-copyright = '2020, FreeCAD community'
-author = 'FreeCAD community'
-
-# -- General configuration ---------------------------------------------------
-
-extensions = [
-    "sphinx.ext.autodoc",
-    "breathe",
-    "sphinx.ext.napoleon",
-    "sphinx.ext.linkcode"
-]
-
-templates_path = ['_templates']
-
-# Autodoc config
-autodoc_default_options = {
-    "member-order": "bysource"
-        }
-
-
 # -- Breathe configuration ---------------------------------------------------
 
 # For each section of FreeCAD that contains cpp code, a seperate breathe
@@ -220,8 +222,3 @@ breathe_projects = {
     "Part": breathe_path.format("Part"),
     "Sketcher": breathe_path.format("Sketcher")
     }
-
-# -- Options for HTML output -------------------------------------------------
-
-html_theme = 'alabaster'
-html_static_path = ['static']

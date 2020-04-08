@@ -4,23 +4,7 @@ Arch IFC
 .. automodule:: ArchIFC
 
 .. autoclass:: ArchIFC.IfcRoot
-    
-    .. automethod:: setProperties
-    .. automethod:: onChanged
-    .. automethod:: setupIfcAttributes
-    .. automethod:: setupIfcComplexAttributes
-    .. automethod:: getIfcTypeSchema
-    .. automethod:: getIfcSchema
-    .. automethod:: getCanonicalisedIfcTypes
-    .. automethod:: getIfcAttributeSchema
-    .. automethod:: addIfcAttributes
-    .. automethod:: addIfcAttribute
-    .. automethod:: addIfcAttributeValueExpressions
-    .. automethod:: setObjIfcAttributeValue
-    .. automethod:: setObjIfcComplexAttributeValue
-    .. automethod:: getObjIfcComplexAttribute
-    .. automethod:: purgeUnusedIfcAttributesFromPropertiesList
-    .. automethod:: migrateDeprecatedAttributes
+    :members:
 
 .. autoclass:: ArchIFC.IfcProduct
     :show-inheritance:
