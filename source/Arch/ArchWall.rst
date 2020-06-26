@@ -3,12 +3,17 @@ Arch Wall
 
 .. automodule:: ArchWall
 
+Functions
+---------
+
 .. autofunction:: ArchWall.makeWall
 
 .. autofunction:: ArchWall.joinWalls
 
 .. autofunction:: ArchWall.areSameWallTypes
 
+Classes
+-------
 .. autoclass:: ArchWall._CommandWall
     :members:
 

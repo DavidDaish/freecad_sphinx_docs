@@ -20,10 +20,12 @@ extensions = [
     "sphinx.ext.inheritance_diagram"
 ]
 
-templates_path = ['_templates']
-html_theme_path = ["."]
-html_theme = "theme"
 html_static_path = ['static']
+html_sidebars = {
+    '**': ['globaltoc.html',
+           'localtoc.html',
+           'searchbox.html']
+        }
 
 # Autodoc config
 autodoc_default_options = {
