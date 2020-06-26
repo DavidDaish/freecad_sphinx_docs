@@ -1,7 +1,5 @@
 # Sphinx FreeCAD documentation
 
-Theme adapted from the guzzle_sphinx_theme theme: https://github.com/guzzle/guzzle_sphinx_theme
-
 ## Setup
 
 1) Successfully build FreeCAD
@@ -9,7 +7,27 @@ Theme adapted from the guzzle_sphinx_theme theme: https://github.com/guzzle/guzz
 3) Install breathe: https://github.com/michaeljones/breathe
 4) Install gitpython: https://gitpython.readthedocs.io/en/stable/intro.html
 4) Install doxygen: http://www.doxygen.nl/manual/install.html
-5) Install entr, if you'd like to build the documentation automatically on changes: http://eradman.com/entrproject/
+5) (optional) Install entr, if you'd like to build the documentation
+   automatically on changes: http://eradman.com/entrproject/
+
+## Building the documentation
+
+Edit the `variables_file` and set the variables to their appropriate values,
+suitable for your personal development environment.
+
+They are, respectively:
+
+- The command or script that builds FreeCAD from source;
+- The absolute path to the root directory of the build location of FreeCAD;
+- The absolute path to the root directory of the source code location of
+  FreeCAD.
+
+Now run these commands to build the entire documentation.
+
+```bash
+source variables_file
+./build_scripts/build_all.sh
+```
 
 ## Building the documentation automatically on change
 
@@ -70,3 +88,6 @@ Then run the following commands.
 source variables_file
 find $FREECAD_SOURCE_LOCATION -name *$section*.cpp -o -name *$section*.h -o -name *$section*.dox | entr ./build_scripts/change_cpp.sh $section
 ```
+
+Create a new terminal and repeat for each of the sections of c++ code you are
+working on.
