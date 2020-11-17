@@ -66,8 +66,11 @@ references = gitrepo.refs
 branch_to_remote_refs = [r.name.split("/") for r in references if len(r.name.split("/")) > 1]
 
 # Get the url for the remote of the active branch.
-active_remote_name = [r[0] for r in branch_to_remote_refs if r[1] == branch_name][0]
-active_remote_url = gitrepo.remote(active_remote_name).url
+active_remote_url = ""
+try:
+    active_remote_name = [r[0] for r in branch_to_remote_refs if r[1] == branch_name][0]
+    active_remote_url = gitrepo.remote(active_remote_name).url
+except: pass
 
 source_url = False
 
