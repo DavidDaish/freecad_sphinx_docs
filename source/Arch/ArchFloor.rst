@@ -3,30 +3,20 @@ Arch Floor
 
 .. automodule:: ArchFloor
 
+Functions
+---------
+
 .. autofunction:: ArchFloor.makeFloor
 
+Classes
+-------
+
 .. autoclass:: ArchFloor._CommandFloor
-    
-    .. automethod:: GetResources
-    .. automethod:: IsActive
-    .. automethod:: Activated
+    :members:
 
 .. autoclass:: ArchFloor._Floor
     :show-inheritance:
-
-    .. automethod:: __init__
-    .. automethod:: setProperties
-    .. automethod:: onDocumentRestored
-    .. automethod:: onChanged
-    .. automethod:: execute
-    .. automethod:: addObject
-    .. automethod:: removeObject
+    :members:
 
 .. autoclass:: ArchFloor._ViewProviderFloor
-
-    .. automethod:: __init__
-    .. automethod:: getIcon
-    .. automethod:: attach
-    .. automethod:: claimChildren
-    .. automethod:: setupContextMenu
-    .. automethod:: convertToBuildingPart
+    :memebers:

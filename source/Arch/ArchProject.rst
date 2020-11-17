@@ -3,24 +3,21 @@ Arch Project
 
 .. automodule:: ArchProject
 
+Functions
+---------
+
 .. autofunction:: ArchProject.makeProject
 
-.. autoclass:: ArchProject._CommandProject
+Classes
+-------
 
-    .. automethod:: GetResources
-    .. automethod:: IsActive
-    .. automethod:: Activated
+.. autoclass:: ArchProject._CommandProject
+    :members:
 
 .. autoclass:: ArchProject._Project
     :show-inheritance:
+    :members:
 
-    .. automethod:: __init__
-    .. automethod:: setProperties
-    .. automethod:: onDocumentRestored
-
-
-.. autoclass:: ArchProject._viewproviderproject
+.. autoclass:: ArchProject._ViewProviderProject
     :show-inheritance:
-
-    .. automethod:: __init__
-    .. automethod:: getIcon
+    :members:

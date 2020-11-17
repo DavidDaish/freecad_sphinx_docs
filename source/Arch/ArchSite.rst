@@ -3,19 +3,23 @@ Arch Site
 
 .. automodule:: ArchSite
 
+Functions
+---------
+
+.. autofunction:: ArchSite.toNode
+.. autofunction:: ArchSite.makeWindRose
+.. autofunction:: ArchSite.makeSolarDiagram
+
+Classes
+-------
+
 .. autoclass:: ArchSite._Site
     :show-inheritance:
+    :members:
 
-    .. automethod:: __init__
-    .. automethod:: setProperties
-    .. automethod:: onDocumentRestored
-    .. automethod:: execute
-    .. automethod:: onChanged
-    .. automethod:: computeAreas
 
 .. autoclass:: ArchSite._ViewProviderSite
     
-    .. automethod:: __init__
     .. automethod:: setProperties
     .. automethod:: onDocumentRestored
     .. automethod:: getIcon
@@ -23,3 +27,5 @@ Arch Site
     .. automethod:: setEdit
     .. automethod:: unsetEdit
     .. automethod:: attach
+    .. automethod:: updateData
+    .. automethod:: onChanged

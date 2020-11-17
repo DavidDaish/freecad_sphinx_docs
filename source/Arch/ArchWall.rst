@@ -22,25 +22,11 @@ Classes
 
 .. autoclass:: ArchWall._Wall
     :show-inheritance:
-
-    .. automethod:: __init__
-    .. automethod:: setProperties
-    .. automethod:: onDocumentRestored
-    .. automethod:: execute
-    .. automethod:: onBeforeChange
-    .. automethod:: onChanged
-    .. automethod:: getFootprint
-    .. automethod:: getExtrusionData
+    :members:
 
 .. autoclass:: ArchWall._ViewProviderWall
     :show-inheritance:
-
-    .. automethod:: __init__
-    .. automethod:: getIcon
-    .. automethod:: attach
-    .. automethod:: updateData
-    .. automethod:: getDisplayModes
-    .. automethod:: setDisplayMode
+    :members:
 
 .. 
     The ArchWall._CommandWall can't ever enter it's interactive mode, which is

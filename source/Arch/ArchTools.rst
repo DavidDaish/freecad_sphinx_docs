@@ -1,6 +1,8 @@
 Arch workbench tools
 ====================
 
+Classes
+-------
 .. autoclass:: ArchWall._CommandWall
     :noindex:
     :members:

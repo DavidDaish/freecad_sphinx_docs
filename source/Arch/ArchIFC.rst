@@ -3,31 +3,22 @@ Arch IFC
 
 .. automodule:: ArchIFC
 
+Classes
+-------
+
 .. autoclass:: ArchIFC.IfcRoot
     :members:
 
 .. autoclass:: ArchIFC.IfcProduct
     :show-inheritance:
-
-    .. automethod:: getIfcSchema
-
+    :members:
 
 .. autoclass:: ArchIFC.IfcContext
     :show-inheritance:
-
-    .. automethod:: getIfcSchema
+    :members:
 
 .. autoclass:: ArchIFCView.IfcContextView
-    
-    .. automethod:: setEdit
+    :members:
 
 .. autoclass:: ArchIFCView.IfcContextUI
-
-    .. automethod:: __init__
-    .. automethod:: accept
-    .. automethod:: createBaseLayout
-    .. automethod:: createMapConversionFormLayout
-    .. automethod:: prefillMapConversionForm
-    .. automethod:: createFormEntry
-    .. automethod:: createLabel
-    .. automethod:: createLineEdit
+    :memebers:
